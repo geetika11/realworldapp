@@ -1,0 +1,41 @@
+.logo{
+    color:#5cb85c;
+    text-transform: lowercase;
+    font-family: 'titillium web',sans-serif;
+    font-size: 1.5rem;
+    padding-top: 0;
+    margin-right: 2rem;
+    text-decoration:none;
+    font-weight: bolder;
+}
+.navbar{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.conduit{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.navr{
+    float: right;
+}
+.navr a{
+   
+    opacity: 0.5;
+    color: grey;
+    text-decoration: none;
+}
+.navr a:hover{
+    color: #5cb85c;
+    text-decoration: none;
+}
+.user-pic {
+    height: 26px;
+    border-radius: 50px;
+    opacity: 3!important;
+    margin-right: 5px;
+} 
+.active-link{
+    color:black!important;
+    opacity: 1!important;
+}

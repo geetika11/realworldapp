@@ -1,0 +1,43 @@
+<div>
+    <div class="row">
+        <div class="col-md-12">
+          
+          <nav class="navbar">
+          <a class="logo conduit" href="#" >Conduit</a>
+          <div class="navr">
+              <a style="cursor:pointer" href="#">Home</a>&nbsp;&nbsp; 
+              <a routerLink="/Sign-In" routerLinkActive="active-link" style="cursor:pointer">Sign in</a>&nbsp;&nbsp;
+              <a routerLink="/Sign-Up" routerLinkActive="active-link" style="cursor:pointer" class="signup"> Sign up</a>  
+        </div>
+        </nav>
+        </div>
+        </div>
+  </div>
+<div class="row">
+  <div class="col-md-6 offset-md-3 col-xs-12">
+  <h1 class="text-xs-center signup">Sign Up</h1>
+  <a id="signin" class="form-control-lg" (click)="callSignin()">Have an account?</a>
+  <form #signupForm="ngForm"  (ngSubmit) = "registerUser(signupForm)">
+    <fieldset class="form-group">
+    <input class="form-control form-control-lg"type="text" placeholder="Username" name="username" ngModel>
+    </fieldset>
+    
+  <fieldset class="form-group">
+  <input class="form-control form-control-lg"type="text" placeholder="Email"type="email" name="email"ngModel>
+</fieldset>
+<fieldset class="form-group">
+    <input class="form-control form-control-lg "type="password" placeholder="Password" type="password" name="password" ngModel>
+      </fieldset>
+<button class="btn btn-lg btn-success float-right " type="submit">Sign up</button> 
+  
+  </form>
+</div>
+<br><br>
+
+  </div>
+  <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" >
+      <p *ngIf="error" style="color:red;">Invalid username or email already taken</p>
+      </div>
+      </div>
